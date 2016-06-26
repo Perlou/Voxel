@@ -69,7 +69,7 @@ Main.prototype = {
 		var _this = this;
 		var oSpan = _this.oLoading.getElementsByTagName('span')[0];
 		var aDiv = _this.oLoading.getElementsByTagName('div');
-		var imgArr = ['./images/bg1.jpg','./images/bg2.jpg','./images/bg3.jpg','./images/bg4.jpg','./images/bg5.jpg','./images/about1.jpg','./images/about2.jpg','./images/about3.jpg','./images/about4.jpg','./images/worksimg1.jpg','./images/worksimg2.jpg','./images/worksimg3.jpg','./images/worksimg4.jpg','./images/team.png','./images/greenLine.png'];
+		var imgArr = [require('./images/bg1.jpg'),require('./images/bg2.jpg'),require('./images/bg3.jpg'),require('./images/bg4.jpg'),require('./images/bg5.jpg'),require('./images/about1.jpg'),require('./images/about2.jpg'),require('./images/about3.jpg'),require('./images/about4.jpg'),require('./images/worksimg1.jpg'),require('./images/worksimg2.jpg'),require('./images/worksimg3.jpg'),require('./images/worksimg4.jpg'),require('./images/team.png'),require('./images/greenLine.png')];
 		var iNow = 0;
 		
 		for(var i=0;i<imgArr.length;i++){
@@ -78,7 +78,6 @@ Main.prototype = {
 			objImg.onload = function(){
 				iNow++;
 				oSpan.style.width = iNow/imgArr.length*100 + '%';
-				console.log(iNow);
 			};
 			
 		}
