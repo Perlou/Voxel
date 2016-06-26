@@ -78,6 +78,7 @@ Main.prototype = {
 			objImg.onload = function(){
 				iNow++;
 				oSpan.style.width = iNow/imgArr.length*100 + '%';
+				console.log(iNow);
 			};
 			
 		}
